@@ -1,0 +1,1 @@
+import{j as n,E as s,k as t}from"./index-UKYyFUXq.js";function i(){return n.jsx("div",{className:"container page",children:n.jsxs(s,{icon:"map-pin",title:"Такой страницы нет",children:["Возможно, адрес изменился. Начните с карты или каталога.",n.jsx(t,{to:"/",className:"btn primary",children:"На главную"})]})})}export{i as default};
