@@ -1,0 +1,22 @@
+/* Тема «Классика · синяя» — как «Классика», но акцент голубо-синий вместо красного.
+   Подключается в src/main.tsx, а в списке тем — в src/store.tsx (PALETTES).
+   Чтобы сделать свою тему: скопируйте этот файл, поменяйте имя в селекторе и цвета. */
+:root[data-palette="azure"] {
+  /* Фон и поверхности */
+  --bg: #EDF3FA; --bg-2: #DFE9F6; --surface: #FFFFFF; --surface-2: #EDF3FA; --glass: rgba(255, 255, 255, .65);
+  /* Текст и линии */
+  --ink: #12213A; --ink-2: #3B4963; --ink-3: #59688A; --line: #CCDAEC;
+  /* Акцент (кнопки, активные пункты, бейджи) — голубо-синий */
+  --red: #1E7BE0; --red-ink: #155FB0; --on-accent: #fff; --blue: #0E9AB0;
+  /* Небо и пейзажи */
+  --sky-a: #7FB4F0; --sky-b: #D4E6FA; --sky-c: #BFE3F5; --sun: #F4FAFF; --far: #A3BEE0; --mid: #7096CC; --near: #2F5A9A; --city: #4E77B3; --lights: #FFE7A3; --star: 0;
+  --shadow: 0 16px 34px -18px rgba(18, 33, 58, .3); color-scheme: light;
+  /* Светлая тема: тёмный текст и состояния */
+  --ok: #10805A; --warn: #B26A00; --danger: #D3263A;
+  --hero-ink: var(--ink); --hero-ink-2: var(--ink-2); --hero-glass: rgba(255,255,255,.6); --hero-line: rgba(18,33,58,.14);
+  --hero-shade: var(--bg); --hero-tshadow: 0 2px 24px rgba(255,255,255,.6); --hand-color: var(--red);
+}
+/* Фото-задник внутренних страниц на светлом фоне — чуть прозрачнее */
+:root[data-palette="azure"] main > .page::before { opacity: .55; }
+/* На фото первого экрана контурная кнопка плохо читается — делаем её залитой */
+:root[data-palette="azure"] .hero2.photo .btn.outline { background: var(--red); color: var(--on-accent); border-color: var(--red); }
