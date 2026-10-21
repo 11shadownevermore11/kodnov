@@ -1,0 +1,11 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+sqlalchemy>=2.0.25
+pydantic>=2.5
+pyjwt>=2.8
+pyotp>=2.9
+snowballstemmer>=2.2
+rapidfuzz>=3.5
+python-multipart>=0.0.9
+httpx>=0.26
+tzdata>=2024.1
